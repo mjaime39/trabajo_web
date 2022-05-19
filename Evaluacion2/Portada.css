@@ -1,0 +1,23 @@
+/*--------Jaime Eduardo Muñoz Carrasco---------*/
+
+footer{
+    background-color:darkgray;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+/*Definicion de id*/
+#parrafo{
+    color:black;
+    text-align: justify;
+    font-size: large;
+}
+.foto1 { 
+    width: 100px;
+}
+.foto2 {
+    height:600px;
+}
+
+/*--------Jaime Eduardo Muñoz Carrasco---------*/

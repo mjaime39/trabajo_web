@@ -1,0 +1,162 @@
+<!--------Jaime Eduardo Muñoz Carrasco--------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Portada.css">
+
+
+</head>
+<body>
+<!--menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Two wheels</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Portada.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Motos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Motos 2020</a></li>
+                  <li><a class="dropdown-item" href="#">Motos 2021</a></li>
+                  <li><a class="dropdown-item" href="#">Motos 2022</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicio Tecnico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Formulario.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!--Formulario-->
+    <br>
+    <div class="container">
+        <h2>Two Wheels Contacto</h2>
+    <form action="recibe.php" method="post">
+    <div class="row g-3">
+        <div class="col-xs-12 col-sm-6">
+                <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Ingrese su Nombre" required>
+                            <div class="valid-feedback">
+                                Ok!!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Ingrese su Apellido" required>
+                            <div class="valid-feedback">
+                                Ok!!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Correo electronico</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Ingrese su Correo" required>
+                            <div class="valid-feedback">
+                                Ok!!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Numero Telefonico</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Ingrese su Numero de Contacto" required>
+                            <div class="valid-feedback">
+                                Ok!!
+                            </div>
+                        </div>
+                </form>        
+                <label for="">Tipo de moto</label>
+                <select class="form-select" name="" id="">
+                    <option value="">Seleccione tipo de moto</option>
+                    <option value="">Sport</option>
+                    <option value="">Cruiser</option>
+                    <option value="">Grand American Touring</option>
+                    <option value="">Custom</option>
+                </select>
+                <label for="">Tipo de Contacto</label> <br>
+                <input type="radio" class="form-check-input" name="rbt_contacto" id="rbt_contacto" value="v">
+                <label for="">Visita a sucursal  &nbsp</label>
+                <input type="radio" class="form-check-input" name="rbt_contacto" id="rbt_contacto" value="c">
+                <label for="">Consulta web</label> <br>
+                <label for="">Comentarios</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Describa su solicitud"></textarea>
+                <br>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Acepto recibir informacion a traves de correo electronico</label>
+                  </div>
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                      <label class="form-check-label" for="invalidCheck2">
+                        Acepto Terminos y condiciones
+                      </label>
+                    </div>
+                  </div>
+        </div>
+            <div class="col-xs-12">
+                <input type="submit" class="btn btn-dark" value="Enviar">
+                <input type="reset" class="btn btn-success" value="Limpiar Formulario">
+            </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    </form>
+    </div>
+
+<!--Pie de pagina-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <p>
+                        Motcicletas -> +56939491234 <br>
+                        Partes y Accesorios -> +56939491232 <br>
+                        Servico Técnico -> +56957426545 <br>
+                        info@twowheels.cl <br>
+                        servicio@twowheels.cl <br>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <p>
+                        videos referenciales:
+                        <a href="https://www.youtube.com/watch?v=b3fEOIg9SiI"><img src="imagenes/icono1.png" class="foto1">
+                        <a href="https://www.youtube.com/watch?v=LcNvcYREkPQ"><img src="imagenes/icono2.png" class="foto1">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+<!--------Jaime Eduardo Muñoz Carrasco--------->
